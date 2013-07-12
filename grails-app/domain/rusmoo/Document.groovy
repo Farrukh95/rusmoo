@@ -7,8 +7,8 @@ class Document {
     Integer unitId
     
     static constraints = {
-        placement(nullable:true, size: 256)
-        name(nullable:true, size: 50)
+        placement(nullable:true, size:0..256)
+        name(nullable:true, size:0..50)
         unitId(nullable:true)
     }
 }

@@ -7,7 +7,7 @@ class Lecture {
     Integer unitId
     
     static constraints = {
-        header(nullable:true, size:60)
+        header(nullable:true, size:0..60)
         content(nullable:true)
         unitId(nullable:true)
     }

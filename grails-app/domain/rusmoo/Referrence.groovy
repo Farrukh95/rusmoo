@@ -6,7 +6,7 @@ class Referrence {
     Integer unitId
     
     static constraints = {
-        url(nullable:true, size:256)
+        url(nullable:true, size:0..256)
         unitId(nullable:true)
     }
 }

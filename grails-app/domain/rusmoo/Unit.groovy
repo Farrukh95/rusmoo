@@ -6,7 +6,7 @@ class Unit {
     Integer blockId
     
     static constraints = {
-        name(nullable:true, size:100)
+        name(nullable:true, size:0..100)
         blockId(nullable:true)
     }
 }

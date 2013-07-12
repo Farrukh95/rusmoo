@@ -5,7 +5,7 @@ class AnswerClose {
     Integer answerId
 
     static constraints = {
-        text(nullable:true, size:256)
+        text(nullable:true, size:0..256)
         answerId(nullable:true)
     }
 }
