@@ -11,4 +11,8 @@ class Document {
         name(nullable:true, size:0..50)
         unitId(nullable:true)
     }
+    
+    static mapping = {
+        table "DOCUMENT"
+    }
 }

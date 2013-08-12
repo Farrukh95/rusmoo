@@ -7,4 +7,8 @@ class Glossary {
     static constraints = {
         unitId(nullable:true)
     }
+    
+    static mapping = {
+        table "GLOSSARY"
+    }
 }

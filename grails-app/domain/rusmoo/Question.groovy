@@ -13,5 +13,12 @@ class Question {
         unitId(nullable:true)
     }
     
+    static hasMany = [answers : Answer]
+    
+    static mapping = {
+        table "QUESTION"
+        answers joinTable: [key: "ID", column: "QUESTION_ID", name: "UNIT"]
+    }
+    
 }
 

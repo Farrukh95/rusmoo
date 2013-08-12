@@ -9,4 +9,8 @@ class Referrence {
         url(nullable:true, size:0..256)
         unitId(nullable:true)
     }
+    
+    static mapping = {
+        table "REFERRENCE"
+    }
 }

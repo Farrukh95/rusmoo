@@ -10,5 +10,11 @@ class Answer {
         right(nullable:true)
         questionId(nullable:true)
     }    
+    
+    static mapping = {
+        table "ANSWER"
+    }
+    
+    
+    
 }
-

@@ -29,7 +29,6 @@ environments {
             password = "rootroot";
             dbCreate = "update"
             url = "jdbc:mysql://10.193.113.77:3306/shmoodl"
-            pooled = true
             driverClassName = "com.mysql.jdbc.Driver"
         }
     }

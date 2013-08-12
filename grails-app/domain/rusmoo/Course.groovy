@@ -9,6 +9,10 @@ class Course {
     }
     
     static mapping = {
+        table "COURSE"
+        blocks joinTable: [column: "COURSE_ID", key: "ID", name: "BLOCK"]
     }
+    
+    static hasMany = [blocks : Block]
     
 }

@@ -11,4 +11,8 @@ class Lecture {
         content(nullable:true)
         unitId(nullable:true)
     }
+    
+    static mapping = {
+        table "LECTURE"
+    }
 }
