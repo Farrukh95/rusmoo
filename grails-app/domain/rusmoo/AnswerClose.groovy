@@ -11,5 +11,6 @@ class AnswerClose extends Answer {
     
     static mapping = {
         table "ANSWER_CLOSE"
+        id column: 'ID', type: 'integer'
     }
 }

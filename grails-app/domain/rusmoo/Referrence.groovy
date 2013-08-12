@@ -12,5 +12,6 @@ class Referrence {
     
     static mapping = {
         table "REFERRENCE"
+        id column: 'ID', type: 'integer'
     }
 }

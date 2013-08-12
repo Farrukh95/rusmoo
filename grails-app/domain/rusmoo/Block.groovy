@@ -16,6 +16,7 @@ class Block {
     
     static mapping = {
         table "BLOCK"
+        id column: 'ID', type: 'integer'
         units joinTable: [column: "UNIT_ID", key: "ID", name: "UNIT"]
     }
 }

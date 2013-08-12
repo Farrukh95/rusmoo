@@ -19,5 +19,6 @@ class Unit {
         lectures joinTable:     [key: "ID", column: "UNIT_ID", name: "LECTURE"]
         glossaries joinTable:   [key: "ID", column: "UNIT_ID", name: "GLOSSARY"]
         questions joinTable:    [key: "ID", column: "UNIT_ID", name: "QUESTION"]
+        id column: 'ID', type: 'integer'
     }
 }

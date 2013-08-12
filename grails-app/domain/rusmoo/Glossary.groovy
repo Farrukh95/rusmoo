@@ -10,5 +10,6 @@ class Glossary {
     
     static mapping = {
         table "GLOSSARY"
+        id column: 'ID', type: 'integer'
     }
 }
