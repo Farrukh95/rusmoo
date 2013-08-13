@@ -14,11 +14,8 @@ environments {
     development {
         dataSource {
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-            //url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
-            username = "root";
-            password = "rootroot";
-            url = "jdbc:mysql://10.193.113.77:3306/rusmoodev?useUnicode=yes&characterEncoding=UTF-8"
-            driverClassName = "com.mysql.jdbc.Driver"
+            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            dialect = "org.hibernate.dialect.H2Dialect"
         }
     }
     test {
@@ -34,6 +31,7 @@ environments {
             password = "rootroot";
             url = "jdbc:mysql://10.193.113.77:3306/shmoodl?useUnicode=yes&characterEncoding=UTF-8"
             driverClassName = "com.mysql.jdbc.Driver"
+            dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
         }
     }
 }
