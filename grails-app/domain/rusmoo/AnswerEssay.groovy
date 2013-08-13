@@ -2,15 +2,19 @@ package rusmoo
 
 class AnswerEssay extends Answer {
     String text
-    Integer answerId
     
     static constrains = {
         test(nullable:true)
-        answerId(nullable:true)
+        answer(nullable:true)
     }
     
+    static belongsTo = [answer:Answer]
+    
     static mapping = {
-        table "ANSWER_ESSAY"
+    }
+    
+    String toString() {
+        text
     }
 }
 

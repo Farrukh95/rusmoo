@@ -4,15 +4,20 @@ class Document {
 
     String placement
     String name
-    Integer unitId
     
     static constraints = {
         placement(nullable:true, size:0..256)
         name(nullable:true, size:0..50)
-        unitId(nullable:true)
+        unit(nullable:true)
     }
     
+    static belongsTo = [unit : Unit]
+    
     static mapping = {
-        table "DOCUMENT"
+        
+    }
+    
+    String toString() {
+        name
     }
 }

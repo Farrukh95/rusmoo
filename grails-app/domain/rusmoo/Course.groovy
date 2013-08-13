@@ -6,13 +6,17 @@ class Course {
 
     static constraints = {
         header(nullable:true, size:0..100)
+        blocks(nullable:true)
     }
     
     static mapping = {
-        table "COURSE"
-        blocks joinTable: [column: "COURSE_ID", key: "ID", name: "BLOCK"]
+        blocks joinTable: false, column: "course_id"
     }
     
     static hasMany = [blocks : Block]
+    
+    String toString() {
+        header
+    }
     
 }

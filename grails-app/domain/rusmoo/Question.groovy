@@ -4,21 +4,25 @@ class Question {
     Byte image
     String name
     String questiontext
-    Integer unitId
     
     static constrains = {
         image(nullable:true)
         name(nullable:true, size:0..256)
         questiontext(nullable:true)
-        unitId(nullable:true)
+        unit(nullable:true)
     }
+    
+    static belongsTo = [unit : Unit]
     
     static hasMany = [answers : Answer]
     
     static mapping = {
-        table "QUESTION"
-        answers joinTable: [key: "ID", column: "QUESTION_ID", name: "UNIT"]
+        answers joinTable: false, column: "QUESTION_ID"
     }
-    
+
+
+    String toString() {
+        name
+    }    
 }
 

@@ -3,21 +3,25 @@ package rusmoo
 class Unit {
 
     String name
-    Integer blockId
     
     static constraints = {
         name(nullable:true, size:0..100)
-        blockId(nullable:true)
+        block(nullable:true)
     }
     
     static hasMany = [documents:Document, referrences:Referrence, lectures:Lecture, glossaries:Glossary, questions:Question]
     
+    static belongsTo = [block: Block]
+    
     static mapping = {
-        table "UNIT"
-        documents joinTable:    [key: "ID", column: "UNIT_ID", name: "DOCUMENT"]
-        referrences joinTable:  [key: "ID", column: "UNIT_ID", name: "REFERRENCE"]
-        lectures joinTable:     [key: "ID", column: "UNIT_ID", name: "LECTURE"]
-        glossaries joinTable:   [key: "ID", column: "UNIT_ID", name: "GLOSSARY"]
-        questions joinTable:    [key: "ID", column: "UNIT_ID", name: "QUESTION"]
+        documents joinTable:    false, column: "unit_id"
+        referrences joinTable:  false, column: "unit_id"
+        lectures joinTable:     false, column: "unit_id"
+        glossaries joinTable:   false, column: "unit_id"
+        questions joinTable:    false, column: "unit_id"
+    }
+    
+    String toString() {
+        name
     }
 }

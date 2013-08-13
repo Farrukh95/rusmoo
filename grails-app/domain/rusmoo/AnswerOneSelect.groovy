@@ -3,15 +3,19 @@ package rusmoo
 class AnswerOneSelect extends Answer {
     String text
     Boolean selected
-    Integer answerId
 
     static constraints = {
         text(nullable:true)
         selected(nullable:true)
-        answerId(nullable:true)
+        answer(nullable:true)
     }
     
+    static belongsTo = [answer:Answer]
+    
     static mapping = {
-        table "ANSWER_ONE_SELECT"
+    }
+    
+    String toString() {
+        text
     }
 }

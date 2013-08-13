@@ -2,14 +2,18 @@ package rusmoo
 
 class AnswerClose extends Answer {
     String text
-    Integer answerId
 
     static constraints = {
         text(nullable:true, size:0..256)
-        answerId(nullable:true)
+        answer(nullable:true)
     }
     
+    static belongsTo = [answer:Answer]
+    
     static mapping = {
-        table "ANSWER_CLOSE"
+    }
+    
+    String toString() {
+        text
     }
 }

@@ -2,13 +2,13 @@ package rusmoo
 
 class Glossary {
 
-    Integer unitId
-    
     static constraints = {
-        unitId(nullable:true)
+        unit(nullable:true)
     }
     
+    static belongsTo = [unit : Unit]
+    
     static mapping = {
-        table "GLOSSARY"
+        
     }
 }
