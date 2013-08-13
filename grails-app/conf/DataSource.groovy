@@ -14,7 +14,11 @@ environments {
     development {
         dataSource {
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            //url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            username = "root";
+            password = "rootroot";
+            url = "jdbc:mysql://10.193.113.77:3306/rusmoodev?useUnicode=yes&characterEncoding=UTF-8"
+            driverClassName = "com.mysql.jdbc.Driver"
         }
     }
     test {
@@ -25,10 +29,10 @@ environments {
     }
     production {
         dataSource {
+            dbCreate = "update"
             username = "root";
             password = "rootroot";
-            dbCreate = "update"
-            url = "jdbc:mysql://10.193.113.77:3306/shmoodl"
+            url = "jdbc:mysql://10.193.113.77:3306/shmoodl?useUnicode=yes&characterEncoding=UTF-8"
             driverClassName = "com.mysql.jdbc.Driver"
         }
     }
