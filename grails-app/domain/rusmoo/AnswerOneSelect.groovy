@@ -13,6 +13,5 @@ class AnswerOneSelect extends Answer {
     
     static mapping = {
         table "ANSWER_ONE_SELECT"
-        id column: 'ID', type: 'integer'
     }
 }

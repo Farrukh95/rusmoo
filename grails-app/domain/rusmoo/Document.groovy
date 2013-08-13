@@ -14,6 +14,5 @@ class Document {
     
     static mapping = {
         table "DOCUMENT"
-        id column: 'ID', type: 'integer'
     }
 }

@@ -17,7 +17,6 @@ class Question {
     
     static mapping = {
         table "QUESTION"
-        id column: 'ID', type: 'integer'
         answers joinTable: [key: "ID", column: "QUESTION_ID", name: "UNIT"]
     }
     

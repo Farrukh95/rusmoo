@@ -13,7 +13,6 @@ class Answer {
     
     static mapping = {
         table "ANSWER"
-        id column: 'ID', type: 'integer'
     }
     
     
