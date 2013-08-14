@@ -2,23 +2,16 @@ package rusmoo
 
 class Answer {
     Integer score
-    Boolean right
-//    AnswerClose close
-//    AnswerEssay essay
-//    AnswerOneSelect oneSelect
+    Boolean righted
     
     static constrans = {
-        score(nullable:true)
-        right(nullable:true)
-        question(nullable:true)
-//        close(nullable:true)
-//        essay(nullable:true)
-//        oneSelect(nullable:true)
+        score nullable:true 
+        right nullable:true
+        question nullable:true
     }   
     
     static belongsTo = [question : Question]
     
     static mapping = {
-        
     }
 }

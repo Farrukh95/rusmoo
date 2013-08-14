@@ -26,10 +26,10 @@ environments {
     }
     production {
         dataSource {
-            dbCreate = "update"
+            dbCreate = "create"
             username = "root";
             password = "rootroot";
-            url = "jdbc:mysql://10.193.113.77:3306/shmoodl?useUnicode=yes&characterEncoding=UTF-8"
+            url = "jdbc:mysql://10.193.113.77:3306/rusmoodev?useUnicode=yes&characterEncoding=UTF-8"
             driverClassName = "com.mysql.jdbc.Driver"
             dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
         }
