@@ -26,7 +26,7 @@ environments {
     }
     production {
         dataSource {
-            dbCreate = "create"
+            dbCreate = "update"
             username = "root";
             password = "rootroot";
             url = "jdbc:mysql://10.193.113.77:3306/rusmoodev?useUnicode=yes&characterEncoding=UTF-8"

@@ -114,9 +114,9 @@
                                   <li class="controller">
                                     <g:link controller="Question">Вопросы</g:link>
                                   </li>
-                                  <li class="controller">
+<!--                                  <li class="controller">
                                     <g:link controller="Answer">Ответы</g:link>
-                                  </li>
+                                  </li>-->
                                   <li class="controller">
                                     <g:link controller="AnswerOneSelect">Ответы с выбором</g:link>
                                   </li>

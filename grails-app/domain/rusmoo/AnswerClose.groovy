@@ -5,10 +5,10 @@ class AnswerClose extends Answer {
 
     static constraints = {
         text(nullable:true, size:0..256)
-        answer(nullable:true)
+//        answer(nullable:true)
     }
     
-    static belongsTo = [answer:Answer]
+//    static belongsTo = [answer:Answer]
     
     static mapping = {
     }

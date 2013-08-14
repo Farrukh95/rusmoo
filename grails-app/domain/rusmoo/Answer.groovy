@@ -5,7 +5,7 @@ class Answer {
     Boolean righted
     
     static constrans = {
-        score nullable:true 
+        score nullable:true, blank: true
         right nullable:true
         question nullable:true
     }   

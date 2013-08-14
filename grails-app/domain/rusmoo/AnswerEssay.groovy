@@ -5,8 +5,8 @@ class AnswerEssay extends Answer {
     
     static constrains = {
         text(size:0..256)
-        test(nullable:true)
-        answer(nullable:true)
+//        test(nullable:true)
+//        answer(nullable:true)
     }
     
     String toString() {
