@@ -1,17 +1,14 @@
 package rusmoo
 
 class Answer {
-    Integer score
     Boolean righted
+    String comment
     
     static constrans = {
-        score nullable:true, blank: true
         right nullable:true
         question nullable:true
+        comment nullable:true, size:256
     }   
     
     static belongsTo = [question : Question]
-    
-    static mapping = {
-    }
 }

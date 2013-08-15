@@ -1,16 +1,20 @@
 package rusmoo
 
 class AnswerEssay extends Answer {
-    String text
+    String content
+    String essayHeader
     
     static constrains = {
-        text(size:0..256)
-//        test(nullable:true)
-//        answer(nullable:true)
+        content(maxSize:5000)
+        essayHeader(size:256)
     }
     
     String toString() {
-        text
+        essayHeader
+    }
+    
+    static mapping = {
+        content sqlType:'TEXT'
     }
 }
 
