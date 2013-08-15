@@ -3,9 +3,11 @@ package rusmoo
 class Referrence {
 
     String url
+    String comment
     
     static constraints = {
         url(nullable:true, size:0..256)
+        comment(nullable:true, size:0..256)
         unit(nullable:true)
     }
     
@@ -16,6 +18,6 @@ class Referrence {
     }
     
     String toString() {
-        url
+        url.substring(0, 25) + comment
     }
 }
