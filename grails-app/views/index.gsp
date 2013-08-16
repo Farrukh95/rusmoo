@@ -127,6 +127,9 @@
                                     <g:link controller="AnswerEssay">Эссе</g:link>
                                   </li>
                                   <li class="controller">
+                                    <g:link controller="AnswerMaching">На соответствие</g:link>
+                                  </li>
+                                  <li class="controller">
                                     <g:link controller="Glossary">Глоссарий</g:link>
                                   </li>
                                 </ul>
