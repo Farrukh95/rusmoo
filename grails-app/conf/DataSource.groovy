@@ -21,15 +21,19 @@ environments {
     test {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            username = "root";
+            password = "rootroot";
+            url = "jdbc:mysql://10.193.113.77:3306/rusmoodev?useUnicode=yes&characterEncoding=UTF-8"
+            driverClassName = "com.mysql.jdbc.Driver"
+            dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
         }
     }
     production {
         dataSource {
             dbCreate = "update"
-            username = "root";
-            password = "rootroot";
-            url = "jdbc:mysql://10.193.113.77:3306/rusmoodev?useUnicode=yes&characterEncoding=UTF-8"
+            username = "debian-sys-maint";
+            password = "KU2BEg6kqGYZoqAu";
+            url = "jdbc:mysql://localhost:3306/rusmoodev"
             driverClassName = "com.mysql.jdbc.Driver"
             dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
         }
