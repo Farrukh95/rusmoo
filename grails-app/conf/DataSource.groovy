@@ -33,7 +33,7 @@ environments {
             dbCreate = "update"
             username = "debian-sys-maint";
             password = "KU2BEg6kqGYZoqAu";
-            url = "jdbc:mysql://localhost:3306/rusmoodev"
+            url = "jdbc:mysql://localhost:3306/rusmoodev?useUnicode=yes&characterEncoding=UTF-8"
             driverClassName = "com.mysql.jdbc.Driver"
             dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
         }
