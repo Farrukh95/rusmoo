@@ -7,14 +7,14 @@ class Lecture {
     
     static constraints = {
         header(nullable:true, size:0..60)
-        content(nullable:true, size:0..256)
+        content(nullable:true, size:0..5000)
         unit(nullable:true)
     }
     
     static belongsTo = [unit : Unit]
     
     static mapping = {
-        
+        content sqlType:'TEXT'
     }
     
     String toString() {
