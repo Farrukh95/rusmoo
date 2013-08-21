@@ -7,7 +7,7 @@ class Lecture {
     
     static constraints = {
         header(nullable:true, size:0..60)
-        content(nullable:true, size:0..5000)
+        content(nullable:true, size:0..15000)
         unit(nullable:true)
     }
     

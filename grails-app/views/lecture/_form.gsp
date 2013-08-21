@@ -15,7 +15,7 @@
 		<g:message code="lecture.content.label" default="Content" />
 		
 	</label>
-	<g:textArea name="content" cols="40" rows="5" maxlength="256" value="${lectureInstance?.content}"/>
+	<!--g:textArea name="content" cols="40" rows="5" maxlength="256" value="${lectureInstance?.content}"/-->
         <richui:richTextEditor name="content" value="${lectureInstance?.content}" width="525" />
 </div>
 

@@ -5,7 +5,7 @@ class AnswerEssay extends Answer {
     String essayHeader
     
     static constrains = {
-        content(maxSize:5000)
+        content(maxSize:10000)
         essayHeader(size:256)
     }
     
