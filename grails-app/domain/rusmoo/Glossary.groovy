@@ -8,7 +8,7 @@ class Glossary {
     static constraints = {
         unit(nullable:true)
         term(size:0..255)
-        definition(size:0..1000)
+        definition(nullable:true, size:0..2000)
     }
     
     static belongsTo = [unit : Unit]

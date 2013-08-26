@@ -8,7 +8,7 @@ class Question {
     static constrains = {
         score nullable:true, blank: true, inRange: 0..100
         name(nullable:true, size:0..256)
-        questiontext(nullable:true)
+        questiontext(nullable:true, size: 0..1000)
         unit(nullable:true)
     }
     
@@ -18,6 +18,7 @@ class Question {
     
     static mapping = {
         answers joinTable: false, column: "question_id"
+        questiontext sqlType: 'TEXT'
     }
 
 
